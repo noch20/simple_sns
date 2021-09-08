@@ -1,0 +1,8 @@
+<body>
+    <form action="{% url 'login:logon' %}" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+    <button onclick="location.href='{% url 'login:home' %}'">back to home</button>
+</body>

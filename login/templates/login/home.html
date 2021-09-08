@@ -1,0 +1,9 @@
+<body>
+    <h1>Welcome {{ username }}</h1>
+    {% if is_authenticated %}
+        <button onclick="location.href='{% url 'login:logout' %}'">logout</button>
+    {% else %}
+        <button onclick="location.href='{% url 'login:logon' %}'">logon</button>
+        <button onclick="location.href='{% url 'login:login' %}'">login</button>
+    {% endif %}
+</body>
