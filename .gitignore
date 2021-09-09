@@ -1,3 +1,5 @@
 *.sqlite3
 .venv
 .vscode
+
+local_settings.py
